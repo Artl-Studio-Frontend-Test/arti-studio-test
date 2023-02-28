@@ -1,3 +1,23 @@
+## Auther : Walaa atiyh
+
+## install all the package   `npm i`
+
+## the package that install is :
+
+1. tailwind  `npm install -D tailwindcss postcss autoprefixer` `npx tailwindcss init -p`
+2. `npm install --save-dev @iconify/react`
+3. `npm install react-bootstrap bootstrap`
+4. `npm install @headlessui/react`
+5.` npm install @heroicons/react`
+
+
+## run in local : `npm run dev`
+
+<br>
+<br>
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
