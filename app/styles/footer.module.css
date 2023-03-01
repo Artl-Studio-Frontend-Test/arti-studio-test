@@ -1,0 +1,36 @@
+.div1{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.nav1{
+    display: flex;
+    justify-content:space-between ;
+    margin-top: 1.5rem;
+   
+}
+
+
+@media screen and (max-width: 768px) {
+	.div1{
+        display: inline;
+      
+    }
+    
+    .nav1{
+        display:inline-block;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+       
+    }
+    .center{
+        display:flex;
+        justify-content: center;
+    }
+    .space{
+        margin-bottom: 1.5rem;
+        font-size: 20px;
+    }
+    
+}

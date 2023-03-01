@@ -1,21 +1,23 @@
 .wp_caption {
-  position: relative;
+  /* position: relative; */
   padding-top: 1rem;
   margin: 0;
   text-align: center;
   display: flex;
   justify-content: center;
   background-color: #1b1b1b;
-  padding: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: url(background1.png) no-repeat center ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 41rem;
 }
 
-.demo {
-  display: block;
-  max-width: 100%;
-  height: 37rem;
-  width: 80%;
-  text-align: center;
-}
+
+
 
 .wp_caption:after {
   content: "";
@@ -27,12 +29,11 @@
 }
 
 .wp_caption_text {
-  display: block;
-  position: absolute;
+  
   width: 100%;
   color: #fff;
   text-align: center;
-  top: 10%;
+  
 
 }
 
@@ -43,7 +44,7 @@
   font-size: 4rem;
   border: black;
   color: #fff;
- 
+
 }
 
 @keyframes anim-lineUp {
@@ -68,12 +69,14 @@
 
 }
 
+
+
 .lineUp2 {
   animation: 3s anim-lineUp ease-out;
   font-size: 3.8rem;
   border: black;
   color: #fff;
-  
+
 }
 
 @keyframes anim-lineUp {
@@ -147,7 +150,6 @@
   justify-content: center;
   line-height: 1.5;
   padding: 6px 20px;
-  position: relative;
   text-align: center;
   text-decoration: none;
   transition: background-color .2s, background-position .2s;
@@ -181,7 +183,6 @@
   justify-content: center;
   line-height: 1.5;
   padding: 6px 20px;
-  position: relative;
   text-align: center;
   text-decoration: none;
   transition: background-color .2s, background-position .2s;
@@ -191,3 +192,18 @@
   vertical-align: top;
   white-space: nowrap;
 }
+
+@media screen and (max-width: 768px) {
+  .lineUp {
+    font-size: 2.5rem;
+  }
+  .lineUp2 {
+    font-size: 2.3rem;
+  }
+
+  .wp_caption {
+    /* position: relative; */
+    padding-top: 0.9rem;
+    height: 34rem;
+  }
+  }

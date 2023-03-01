@@ -1,19 +1,15 @@
 import React from "react";
-import Image from "next/image";
 import { Icon } from '@iconify/react';
 
-import home_img from 'public/assets/background1.png';
 import style from "../styles/main.module.css";
-import MainCarousel from "./MainCarousel"
+import MainCarousel from "./MainCarousel";
+
 
 export default function Main(props) {
 
   return (
     <div className={style.wp_caption} >
-      <Image
-        src={home_img}
-        alt="background"
-        className={style.demo} />
+      
 
       <div className={style.wp_caption_text}>
 
@@ -37,6 +33,7 @@ export default function Main(props) {
 
 
       </div>
+        
     </div>
   )
 }

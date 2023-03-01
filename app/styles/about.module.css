@@ -1,0 +1,163 @@
+.about {
+	animation: 3s anim-lineUp ease-out;
+	background-color: #1b1b1b;
+	display: flex;
+	justify-content: center;
+	margin: 1rem;
+	padding: 1rem;
+
+	/* margin-left: 5rem; */
+
+}
+
+@keyframes anim-lineUp {
+	0% {
+		opacity: 0;
+		transform: translateY(80%);
+	}
+
+	20% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+.section {
+	display: flex;
+	justify-content: center;
+}
+
+.section1 {
+	display: flex;
+	justify-content: center;
+
+
+}
+
+.heptagon {
+	background-color: #ffdc44;
+	height: 27%;
+	width: 21%;
+
+	-webkit-clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+	clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+}
+
+
+.section2 {
+	width: 50%;
+	padding-left: 8%;
+
+}
+
+.slide {
+	height: 12rem;
+	width: 7rem;
+}
+
+
+.button_22 {
+	align-items: center;
+	appearance: none;
+	background-size: calc(100% + 20px) calc(100% + 20px);
+	border-radius: 100px;
+	border-width: 0;
+	box-shadow: none;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-flex;
+	font-family: CircularStd, sans-serif;
+	font-size: 0.7rem;
+	height: auto;
+	justify-content: center;
+	line-height: 1;
+	padding: 6px 20px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	transition: background-color .2s, background-position .2s;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	vertical-align: top;
+	white-space: nowrap;
+	margin-right: 1rem;
+
+}
+
+
+.button_21 {
+	align-items: center;
+	appearance: none;
+	background-size: calc(100% + 20px) calc(100% + 20px);
+	border-radius: 100px;
+	border-width: 0;
+	box-shadow: none;
+	box-sizing: border-box;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-flex;
+	font-family: CircularStd, sans-serif;
+	font-size: 1.3rem;
+	height: auto;
+	justify-content: center;
+	line-height: 1;
+	padding: 6px 20px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	transition: background-color .2s, background-position .2s;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	vertical-align: top;
+	white-space: nowrap;
+	margin-right: 1rem;
+}
+
+.h1_NFT{
+	color:#fff;
+	font-size: 3rem;
+}
+.p_NFT{
+	color: #fff;
+	font-size:1.3rem ;
+	width: 90%;
+	text-align: left;
+	margin-bottom:1.5rem ;
+	/* text-[#fff] text-[1.3rem] w-[90%] text-left mb-4  */
+}
+
+
+@media screen and (max-width: 768px) {
+	.section {
+		display: inline-grid;
+		justify-content: center;
+	}
+
+	.section2 {
+		width: 100%;
+		padding-left: 0%;
+		margin-top: 2rem;
+
+	}
+	.h1_NFT{
+		color:#fff;
+		font-size: 2.3rem;
+		
+	}
+	.p_NFT{
+		font-size:1rem ;
+	}
+
+}

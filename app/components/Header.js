@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 import localFont from 'next/font/local';
-import {  useEffect,useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 import MobileMenu from './MobileMenu';
@@ -16,7 +16,7 @@ export default function Header() {
 
 
         function getWindowDimensions() {
-            const width = hasWindow ? window.innerWidth : null
+            const width = hasWindow ? window.innerWidth : 1000
             const height = hasWindow ? window.innerHeight : null
             return {
                 width,
@@ -44,7 +44,7 @@ export default function Header() {
 
     const { height, width } = useWindowDimensions()
     const breakpoint = 768
-    
+
     function linkHanldle(...classes) {
         return classes.filter(Boolean).join(" ");
     }
@@ -55,15 +55,17 @@ export default function Header() {
 
 
 
-            {width <= breakpoint ? 
-                
+            {width > breakpoint ?
 
-                    <MobileMenu  myFont={myFont} />
-               
 
-             : 
-                <DesktopMenu 
-                myFont={myFont}
+                <DesktopMenu
+                    myFont={myFont}
+                />
+
+
+                :
+                <MobileMenu
+                    myFont={myFont}
                 />
 
             }
