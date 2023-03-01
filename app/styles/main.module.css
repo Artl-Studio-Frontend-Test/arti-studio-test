@@ -19,14 +19,6 @@
 
 
 
-.wp_caption:after {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 30%;
-  width: 100%;
-
-}
 
 .wp_caption_text {
   

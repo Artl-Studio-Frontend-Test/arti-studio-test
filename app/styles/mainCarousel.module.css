@@ -24,9 +24,7 @@
 	}
 }
 
-.allslide:hover{
-	animation: none;
-}
+
 
 
 .slider {
@@ -90,8 +88,15 @@
 	width: calc(250px * 14);
 }
 .slide_track:hover {
-	animation: none;
+	
+	position: absolute
 }
+
+.allslide:hover{
+	animation: none;
+	margin-top:5rem;
+}
+
 .slide {
 	height: 10rem;
 	width: 7rem;
